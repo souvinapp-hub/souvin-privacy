@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — Souvin</title>
+<style>
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    color: #3d1c22;
+    line-height: 1.6;
+    background: #FAF7F4;
+  }
+  h1 {
+    color: #6E1F2F;
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .actualizado {
+    color: #7A6058;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    color: #6E1F2F;
+    font-size: 19px;
+    margin-top: 32px;
+    border-bottom: 1px solid #E3D2CC;
+    padding-bottom: 6px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid #E3D2CC;
+    font-size: 15px;
+    vertical-align: top;
+  }
+  th {
+    color: #5A3030;
+    font-weight: 700;
+  }
+  ul {
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  a {
+    color: #6E1F2F;
+  }
+  .contacto {
+    background: #FFFFFF;
+    border: 1px solid #E3D2CC;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 12px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidad de Souvin</h1>
+<p class="actualizado">Última actualización: 27 de junio de 2026</p>
+
+<p>
+  Souvin es una aplicación para registrar fichas de cata de vino. Esta
+  página explica qué información recolecta la app, cómo se usa, y qué
+  control tenés sobre ella.
+</p>
+
+<h2>1. Qué datos recolecta Souvin</h2>
+
+<table>
+  <tr>
+    <th>Dato</th>
+    <th>Para qué se usa</th>
+    <th>Dónde se almacena</th>
+  </tr>
+  <tr>
+    <td>Fichas de cata (etiqueta, bodega, varietal, notas sensoriales, etc.)</td>
+    <td>Función principal de la app: registrar y consultar tus catas</td>
+    <td>Localmente en tu dispositivo (base de datos SQLite)</td>
+  </tr>
+  <tr>
+    <td>Fotos de etiquetas de vino</td>
+    <td>Identificar visualmente cada ficha</td>
+    <td>Localmente en tu dispositivo</td>
+  </tr>
+  <tr>
+    <td>Email de tu cuenta de Google</td>
+    <td>Mostrar con qué cuenta estás conectado para el respaldo en la nube</td>
+    <td>No se almacena fuera del dispositivo; se consulta a Google en cada sesión</td>
+  </tr>
+  <tr>
+    <td>Copia de tus fichas y fotos (solo si activás el respaldo)</td>
+    <td>Backup opcional para no perder tus datos si cambiás de dispositivo</td>
+    <td>Carpeta privada de tu Google Drive (appDataFolder), invisible para vos y para otras apps fuera de Souvin</td>
+  </tr>
+  <tr>
+    <td>Identificador de dispositivo e historial de compra de la Versión completa</td>
+    <td>Validar que ya compraste la Versión completa, para no volver a pedírtelo</td>
+    <td>Procesado por RevenueCat (ver sección 3) y Google Play Billing</td>
+  </tr>
+</table>
+
+<p>
+  Souvin <strong>no recolecta</strong> datos de ubicación, contactos,
+  historial de navegación, ni ningún dato no listado arriba. La app no
+  incluye herramientas de analítica de uso ni de seguimiento publicitario.
+</p>
+
+<h2>2. Acceso a Google Drive</h2>
+<p>
+  Si elegís conectar tu cuenta de Google para el respaldo en la nube,
+  Souvin solicita acceso únicamente al scope
+  <code>drive.appdata</code> de Google Drive. Esto le permite a la app
+  leer y escribir <strong>exclusivamente</strong> dentro de una carpeta
+  privada y oculta, creada por la propia app. Souvin no puede ver, leer,
+  ni modificar ningún otro archivo de tu Google Drive.
+</p>
+<p>
+  Podés desconectar tu cuenta de Google en cualquier momento desde la
+  pantalla de Configuración de la app. Desconectarte no borra los
+  backups ya subidos a Drive; si querés eliminarlos, podés hacerlo desde
+  la configuración de aplicaciones conectadas de tu cuenta de Google.
+</p>
+
+<h2>3. Servicios de terceros</h2>
+<p>Souvin utiliza los siguientes servicios externos:</p>
+<ul>
+  <li>
+    <strong>RevenueCat</strong> — gestiona la compra única de la Versión
+    completa. Procesa un identificador de dispositivo y el historial de
+    transacciones para confirmar tu compra. Más información en su
+    <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">política de privacidad</a>.
+  </li>
+  <li>
+    <strong>Google Play Billing</strong> — procesa el pago de la Versión
+    completa a través de tu cuenta de Google Play. Souvin no recibe ni
+    almacena ningún dato de tu tarjeta o medio de pago.
+  </li>
+  <li>
+    <strong>Google Drive API</strong> — utilizada únicamente para el
+    respaldo opcional descrito en la sección 2.
+  </li>
+</ul>
+
+<h2>4. Tus datos, tu control</h2>
+<ul>
+  <li>Podés editar o eliminar cualquier ficha o foto desde la app en cualquier momento.</li>
+  <li>Desinstalar la app elimina todos los datos almacenados localmente en tu dispositivo.</li>
+  <li>Si activaste el respaldo en Drive, podés eliminar esos backups desde tu cuenta de Google.</li>
+  <li>Souvin no vende ni comparte tus datos con terceros con fines publicitarios.</li>
+</ul>
+
+<h2>5. Menores de edad</h2>
+<p>
+  Souvin no está dirigida a menores de edad y no recolecta intencionalmente
+  datos de menores.
+</p>
+
+<h2>6. Cambios a esta política</h2>
+<p>
+  Si esta política cambia, la fecha de "Última actualización" en esta misma
+  página se actualizará en consecuencia.
+</p>
+
+<h2>7. Contacto</h2>
+<div class="contacto">
+  <p>
+    Para preguntas sobre esta política o sobre tus datos, podés escribir a:<br>
+    <strong>souvin.app@gmail.com</strong>
+  </p>
+</div>
+
+</body>
+</html>
